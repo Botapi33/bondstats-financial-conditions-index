@@ -1,25 +1,6685 @@
 {
   "version": 1,
-  "status": "awaiting-first-refresh",
-  "generatedAt": null,
-  "asOfDate": null,
+  "status": "live",
+  "generatedAt": "2026-09-07T17:21:04.699Z",
+  "asOfDate": "2026-09-03",
   "index": {
-    "score": null,
-    "regime": "Awaiting live calculation",
-    "change1w": null,
-    "change1m": null,
-    "momentum": "\u2014",
-    "mainDriver": "\u2014"
+    "score": 59,
+    "regime": "Tight",
+    "change1w": 6,
+    "change1m": 4.1,
+    "momentum": "Tightening",
+    "mainDriver": "Real-rate pressure"
   },
-  "components": [],
-  "history": [],
-  "sourceHealth": [],
+  "components": [
+    {
+      "id": "real_rates",
+      "label": "Real-rate pressure",
+      "weight": 0.2,
+      "rawValue": 2.42,
+      "unit": "%",
+      "zScore": 2.15,
+      "contribution": 0.43,
+      "pressure": "tightening",
+      "description": "Higher real yields increase the real cost of capital and tighten duration-sensitive financial conditions."
+    },
+    {
+      "id": "long_yield",
+      "label": "Long-end yield pressure",
+      "weight": 0.1,
+      "rawValue": 4.77,
+      "unit": "%",
+      "zScore": 2.04,
+      "contribution": 0.204,
+      "pressure": "tightening",
+      "description": "Higher long-term Treasury yields tighten financing conditions for duration-sensitive borrowers and assets."
+    },
+    {
+      "id": "dollar",
+      "label": "Dollar pressure",
+      "weight": 0.15,
+      "rawValue": 118.75,
+      "unit": "index",
+      "zScore": -0.99,
+      "contribution": -0.149,
+      "pressure": "easing",
+      "description": "A stronger broad U.S. dollar can tighten global dollar funding and external financial conditions."
+    },
+    {
+      "id": "cp_spread",
+      "label": "Commercial-paper spread",
+      "weight": 0.2,
+      "rawValue": 10,
+      "unit": "bp",
+      "zScore": 0.45,
+      "contribution": 0.09,
+      "pressure": "tightening",
+      "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
+    },
+    {
+      "id": "funding",
+      "label": "Overnight funding spread",
+      "weight": 0.15,
+      "rawValue": 1,
+      "unit": "bp",
+      "zScore": 0.6,
+      "contribution": 0.09,
+      "pressure": "tightening",
+      "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
+    },
+    {
+      "id": "reserve_liquidity",
+      "label": "Reserve-liquidity pressure",
+      "weight": 0.1,
+      "rawValue": 3.96,
+      "unit": "% 13w",
+      "zScore": 0.57,
+      "contribution": 0.057,
+      "pressure": "tightening",
+      "description": "Falling reserve balances increase the liquidity-pressure contribution to the index."
+    },
+    {
+      "id": "curve",
+      "label": "Yield-curve inversion",
+      "weight": 0.1,
+      "rawValue": -43,
+      "unit": "bp",
+      "zScore": -0.01,
+      "contribution": -0.001,
+      "pressure": "neutral",
+      "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
+    }
+  ],
+  "history": [
+    {
+      "date": "2021-06-23",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-06-24",
+      "score": 43.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-06-25",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-06-28",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-06-29",
+      "score": 43.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-06-30",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-01",
+      "score": 43.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-02",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-06",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-07",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-08",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-09",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-12",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-13",
+      "score": 43.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-14",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-15",
+      "score": 43.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-16",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-19",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-20",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-21",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-22",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-23",
+      "score": 43.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-26",
+      "score": 42.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-27",
+      "score": 42.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-28",
+      "score": 42.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-29",
+      "score": 42.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-07-30",
+      "score": 42.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-02",
+      "score": 42.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-03",
+      "score": 42.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-04",
+      "score": 42.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-05",
+      "score": 42.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-06",
+      "score": 43.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-09",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-10",
+      "score": 43.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-11",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-12",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-13",
+      "score": 43.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-16",
+      "score": 43,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-17",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-18",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-19",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-20",
+      "score": 44.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-23",
+      "score": 44.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-24",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-25",
+      "score": 43.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-26",
+      "score": 44.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-27",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-30",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-08-31",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-01",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-02",
+      "score": 43.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-03",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-07",
+      "score": 43.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-08",
+      "score": 43.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-09",
+      "score": 43.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-10",
+      "score": 43.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-13",
+      "score": 43.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-14",
+      "score": 43.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-15",
+      "score": 43.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-16",
+      "score": 44.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-17",
+      "score": 44.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-20",
+      "score": 44.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-21",
+      "score": 43.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-22",
+      "score": 43.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-23",
+      "score": 44.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-24",
+      "score": 44.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-27",
+      "score": 44.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-28",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-29",
+      "score": 45.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-09-30",
+      "score": 45.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-01",
+      "score": 44.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-04",
+      "score": 44.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-05",
+      "score": 44.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-06",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-07",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-08",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-12",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-13",
+      "score": 44.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-14",
+      "score": 44.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-15",
+      "score": 44.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-18",
+      "score": 44.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-19",
+      "score": 44.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-20",
+      "score": 44.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-21",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-22",
+      "score": 44.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-25",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-26",
+      "score": 44.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-27",
+      "score": 44.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-28",
+      "score": 44.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-10-29",
+      "score": 45.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-01",
+      "score": 45.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-02",
+      "score": 45.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-03",
+      "score": 45.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-04",
+      "score": 45.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-05",
+      "score": 44.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-08",
+      "score": 44.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-09",
+      "score": 43.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-10",
+      "score": 44.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-12",
+      "score": 44.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-15",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-16",
+      "score": 45.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-17",
+      "score": 45.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-18",
+      "score": 45.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-19",
+      "score": 45.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-22",
+      "score": 46.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-23",
+      "score": 47.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-24",
+      "score": 47.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-26",
+      "score": 46.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-29",
+      "score": 47.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-11-30",
+      "score": 46.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-01",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-02",
+      "score": 47.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-03",
+      "score": 47,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-06",
+      "score": 47.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-07",
+      "score": 47.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-08",
+      "score": 47.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-09",
+      "score": 48,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-10",
+      "score": 48,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-13",
+      "score": 48,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-14",
+      "score": 48.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-15",
+      "score": 48.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-16",
+      "score": 48,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-17",
+      "score": 48.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-20",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-21",
+      "score": 47.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-22",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-23",
+      "score": 47.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-27",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-28",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-29",
+      "score": 47.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-30",
+      "score": 46.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2021-12-31",
+      "score": 47.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-03",
+      "score": 47.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-04",
+      "score": 48.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-05",
+      "score": 49.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-06",
+      "score": 50.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-07",
+      "score": 50.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-10",
+      "score": 50.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-11",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-12",
+      "score": 49.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-13",
+      "score": 49.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-14",
+      "score": 50.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-18",
+      "score": 51.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-19",
+      "score": 51.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-20",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-21",
+      "score": 51.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-24",
+      "score": 50.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-25",
+      "score": 51.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-26",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-27",
+      "score": 52.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-28",
+      "score": 52.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-01-31",
+      "score": 51.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-01",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-02",
+      "score": 52.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-03",
+      "score": 53.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-04",
+      "score": 53.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-07",
+      "score": 54,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-08",
+      "score": 53.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-09",
+      "score": 53.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-10",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-11",
+      "score": 54.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-14",
+      "score": 54.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-15",
+      "score": 54.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-16",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-17",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-18",
+      "score": 54.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-22",
+      "score": 55.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-23",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-24",
+      "score": 54.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-25",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-02-28",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-01",
+      "score": 51.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-02",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-03",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-04",
+      "score": 54.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-07",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-08",
+      "score": 53.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-09",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-10",
+      "score": 55.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-11",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-14",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-15",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-16",
+      "score": 58.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-03-17",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-18",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-21",
+      "score": 56.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-22",
+      "score": 56.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-23",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-24",
+      "score": 55.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-25",
+      "score": 58.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-03-28",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-03-29",
+      "score": 58.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-03-30",
+      "score": 56.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-03-31",
+      "score": 57.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-04-01",
+      "score": 60,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-04",
+      "score": 60.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-05",
+      "score": 61.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-06",
+      "score": 62.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-07",
+      "score": 62.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-08",
+      "score": 62.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-11",
+      "score": 62.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-12",
+      "score": 62.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-13",
+      "score": 62,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-14",
+      "score": 61.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-18",
+      "score": 61,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-19",
+      "score": 62.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-20",
+      "score": 62.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-21",
+      "score": 62.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-22",
+      "score": 64.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-25",
+      "score": 61.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-26",
+      "score": 64,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-27",
+      "score": 66.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-28",
+      "score": 67.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-04-29",
+      "score": 69.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-02",
+      "score": 73.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-03",
+      "score": 70.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-04",
+      "score": 71.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-05",
+      "score": 72.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-06",
+      "score": 71.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-09",
+      "score": 59.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-10",
+      "score": 61,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-11",
+      "score": 60.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-12",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-13",
+      "score": 58.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-16",
+      "score": 58.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-17",
+      "score": 58.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-18",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-19",
+      "score": 64.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-20",
+      "score": 64.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-23",
+      "score": 68,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-24",
+      "score": 68.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-25",
+      "score": 69,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-26",
+      "score": 68.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-27",
+      "score": 68.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-05-31",
+      "score": 65.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-01",
+      "score": 62.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-02",
+      "score": 61,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-03",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-06",
+      "score": 57.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-06-07",
+      "score": 56.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-06-08",
+      "score": 56.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-06-09",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-06-10",
+      "score": 57.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-06-13",
+      "score": 65,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-14",
+      "score": 64,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-15",
+      "score": 63.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-16",
+      "score": 63,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-17",
+      "score": 63.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-21",
+      "score": 63.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-22",
+      "score": 62.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-23",
+      "score": 62.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-24",
+      "score": 63.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-27",
+      "score": 64.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-28",
+      "score": 66.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-29",
+      "score": 66,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-06-30",
+      "score": 65.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-01",
+      "score": 66.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-05",
+      "score": 68,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-06",
+      "score": 68.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-07",
+      "score": 68.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-08",
+      "score": 67.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-11",
+      "score": 67.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-12",
+      "score": 68.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-13",
+      "score": 62,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-14",
+      "score": 71.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-15",
+      "score": 73.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-18",
+      "score": 67.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-19",
+      "score": 66.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-20",
+      "score": 69,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-21",
+      "score": 68.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-22",
+      "score": 68.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-25",
+      "score": 63,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-26",
+      "score": 58.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-27",
+      "score": 61,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-28",
+      "score": 68.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-07-29",
+      "score": 66.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-01",
+      "score": 63,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-02",
+      "score": 65.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-03",
+      "score": 65.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-04",
+      "score": 67.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-05",
+      "score": 64.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-08",
+      "score": 61,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-09",
+      "score": 63.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-10",
+      "score": 64,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-11",
+      "score": 64.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-12",
+      "score": 64.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-15",
+      "score": 61.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-16",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-17",
+      "score": 63.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-18",
+      "score": 61.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-19",
+      "score": 61.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-22",
+      "score": 59.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-23",
+      "score": 60.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-24",
+      "score": 59.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-25",
+      "score": 58,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-26",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-08-29",
+      "score": 56.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-08-30",
+      "score": 57.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2022-08-31",
+      "score": 58,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-01",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-02",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-06",
+      "score": 66,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-07",
+      "score": 65.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-08",
+      "score": 65.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-09",
+      "score": 65,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-12",
+      "score": 64.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-13",
+      "score": 65.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-14",
+      "score": 65.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-15",
+      "score": 66.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-16",
+      "score": 65.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-19",
+      "score": 66.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-20",
+      "score": 65.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-21",
+      "score": 65.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-22",
+      "score": 65.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-23",
+      "score": 65.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-26",
+      "score": 65.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-27",
+      "score": 65,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-28",
+      "score": 65.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-29",
+      "score": 64.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-09-30",
+      "score": 65.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-03",
+      "score": 66,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-04",
+      "score": 74.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-05",
+      "score": 62.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-06",
+      "score": 76.5,
+      "regime": "Very Tight"
+    },
+    {
+      "date": "2022-10-07",
+      "score": 76.8,
+      "regime": "Very Tight"
+    },
+    {
+      "date": "2022-10-11",
+      "score": 72.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-12",
+      "score": 72.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-13",
+      "score": 70.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-14",
+      "score": 74.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-17",
+      "score": 69.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-18",
+      "score": 69.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-19",
+      "score": 68.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-20",
+      "score": 69.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-21",
+      "score": 59.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-24",
+      "score": 64.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-25",
+      "score": 63.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-26",
+      "score": 67,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-27",
+      "score": 72,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-28",
+      "score": 71.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-10-31",
+      "score": 66.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-01",
+      "score": 66.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-02",
+      "score": 74.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-03",
+      "score": 72.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-04",
+      "score": 73.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-07",
+      "score": 73.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-08",
+      "score": 69.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-09",
+      "score": 68.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-10",
+      "score": 66.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-14",
+      "score": 63.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-15",
+      "score": 64.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-16",
+      "score": 64.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-17",
+      "score": 64.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-18",
+      "score": 66.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-21",
+      "score": 64.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-22",
+      "score": 64.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-23",
+      "score": 63.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-25",
+      "score": 63.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-28",
+      "score": 61.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-29",
+      "score": 62.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-11-30",
+      "score": 62.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-01",
+      "score": 62.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-02",
+      "score": 61.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-05",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-06",
+      "score": 61.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-07",
+      "score": 61.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-08",
+      "score": 61.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-09",
+      "score": 61.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-12",
+      "score": 61.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-13",
+      "score": 60.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-14",
+      "score": 60.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-15",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-16",
+      "score": 62.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-19",
+      "score": 65.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-20",
+      "score": 66.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-21",
+      "score": 66.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-22",
+      "score": 66.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-23",
+      "score": 66.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-27",
+      "score": 63.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-28",
+      "score": 63.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-29",
+      "score": 63.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2022-12-30",
+      "score": 64.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-03",
+      "score": 62.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-04",
+      "score": 63.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-05",
+      "score": 61.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-06",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-09",
+      "score": 60.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-10",
+      "score": 60.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-11",
+      "score": 58.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-12",
+      "score": 59.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-13",
+      "score": 60.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-17",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-18",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-19",
+      "score": 58.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-20",
+      "score": 59.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-23",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-24",
+      "score": 57.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-01-25",
+      "score": 60.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-26",
+      "score": 59.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-27",
+      "score": 58.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-30",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-01-31",
+      "score": 59.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-01",
+      "score": 60.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-02",
+      "score": 61,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-03",
+      "score": 60.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-06",
+      "score": 60.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-07",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-08",
+      "score": 61.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-09",
+      "score": 59.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-10",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-13",
+      "score": 58.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-14",
+      "score": 60.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-15",
+      "score": 60.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-16",
+      "score": 60.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-17",
+      "score": 60.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-21",
+      "score": 59.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-22",
+      "score": 60.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-23",
+      "score": 60.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-24",
+      "score": 60.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-27",
+      "score": 61.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-02-28",
+      "score": 62.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-01",
+      "score": 61.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-02",
+      "score": 61.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-03",
+      "score": 60.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-06",
+      "score": 61.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-07",
+      "score": 58.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-08",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-09",
+      "score": 62.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-10",
+      "score": 62.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-13",
+      "score": 64.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-14",
+      "score": 64.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-15",
+      "score": 67.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-16",
+      "score": 67.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-17",
+      "score": 65.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-20",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-21",
+      "score": 65.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-22",
+      "score": 61.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-23",
+      "score": 62.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-24",
+      "score": 62.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-27",
+      "score": 59.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-28",
+      "score": 65.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-29",
+      "score": 63.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-30",
+      "score": 58.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-03-31",
+      "score": 64.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-04-03",
+      "score": 60.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-04-04",
+      "score": 59.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-04-05",
+      "score": 57.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-06",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-07",
+      "score": 55.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-10",
+      "score": 53,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-11",
+      "score": 53.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-12",
+      "score": 54,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-13",
+      "score": 51.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-14",
+      "score": 54.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-17",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-18",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-19",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-20",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-21",
+      "score": 52.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-24",
+      "score": 51.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-25",
+      "score": 54.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-26",
+      "score": 53.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-27",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-04-28",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-01",
+      "score": 51.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-02",
+      "score": 51.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-03",
+      "score": 51.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-04",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-05",
+      "score": 55.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-08",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-09",
+      "score": 55.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-10",
+      "score": 54.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-11",
+      "score": 55.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-12",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-15",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-16",
+      "score": 54.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-17",
+      "score": 53.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-18",
+      "score": 54.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-19",
+      "score": 54,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-22",
+      "score": 51.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-23",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-24",
+      "score": 54.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-25",
+      "score": 55.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-26",
+      "score": 57.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-30",
+      "score": 54.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-05-31",
+      "score": 56.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-01",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-02",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-05",
+      "score": 55.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-06",
+      "score": 55.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-07",
+      "score": 55.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-08",
+      "score": 56.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-09",
+      "score": 56.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-12",
+      "score": 55.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-13",
+      "score": 56.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-14",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-06-15",
+      "score": 59.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-06-16",
+      "score": 58.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-06-20",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-21",
+      "score": 56.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-22",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-23",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-26",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-27",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-06-28",
+      "score": 58.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-06-29",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-06-30",
+      "score": 61.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-07-03",
+      "score": 58.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-07-05",
+      "score": 58.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-07-06",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-07-07",
+      "score": 58.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-07-10",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-07-11",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-07-12",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-13",
+      "score": 56.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-14",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-17",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-18",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-19",
+      "score": 55.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-20",
+      "score": 56.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-21",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-24",
+      "score": 55.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-25",
+      "score": 56.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-26",
+      "score": 55.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-27",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-28",
+      "score": 54.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-07-31",
+      "score": 55.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-01",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-02",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-03",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-04",
+      "score": 54.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-07",
+      "score": 54.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-08",
+      "score": 55.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-09",
+      "score": 56.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-10",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-11",
+      "score": 57.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-14",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-15",
+      "score": 57.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-16",
+      "score": 57.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-17",
+      "score": 57.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-18",
+      "score": 57.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-21",
+      "score": 57.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-22",
+      "score": 57.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-23",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-24",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-25",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-28",
+      "score": 56.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-29",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-30",
+      "score": 56.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-08-31",
+      "score": 57.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-01",
+      "score": 57.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-05",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-06",
+      "score": 57.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-07",
+      "score": 59.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-08",
+      "score": 58.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-11",
+      "score": 57.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-12",
+      "score": 57.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-13",
+      "score": 57.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-14",
+      "score": 57.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-15",
+      "score": 58,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-18",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-19",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-20",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-21",
+      "score": 57.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-22",
+      "score": 57.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-09-25",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-26",
+      "score": 58.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-27",
+      "score": 60,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-28",
+      "score": 58.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-09-29",
+      "score": 58.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-02",
+      "score": 60.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-03",
+      "score": 61.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-04",
+      "score": 60,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-05",
+      "score": 60.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-06",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-10",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-11",
+      "score": 57.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-10-12",
+      "score": 59.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-13",
+      "score": 59.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-16",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-17",
+      "score": 58.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-18",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-19",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-20",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-23",
+      "score": 57.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-10-24",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-25",
+      "score": 58.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-26",
+      "score": 59.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-27",
+      "score": 58.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-30",
+      "score": 58.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-10-31",
+      "score": 63.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-01",
+      "score": 60.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-02",
+      "score": 61.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-03",
+      "score": 60,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-06",
+      "score": 59.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-07",
+      "score": 59.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-08",
+      "score": 58.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-09",
+      "score": 59.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-10",
+      "score": 59.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-13",
+      "score": 59.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-14",
+      "score": 58.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-15",
+      "score": 58,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-16",
+      "score": 58,
+      "regime": "Tight"
+    },
+    {
+      "date": "2023-11-17",
+      "score": 57.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-20",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-21",
+      "score": 56.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-22",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-24",
+      "score": 56.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-27",
+      "score": 54.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-28",
+      "score": 53.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-29",
+      "score": 53.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-11-30",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-01",
+      "score": 57.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-04",
+      "score": 57.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-05",
+      "score": 57.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-06",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-07",
+      "score": 56.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-08",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-11",
+      "score": 56.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-12",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-13",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-14",
+      "score": 54.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-15",
+      "score": 55,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-18",
+      "score": 52.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-19",
+      "score": 51.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-20",
+      "score": 53.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-21",
+      "score": 53.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-22",
+      "score": 53.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-26",
+      "score": 55.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-27",
+      "score": 56.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-28",
+      "score": 56.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2023-12-29",
+      "score": 57.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-02",
+      "score": 55,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-03",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-04",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-05",
+      "score": 51.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-08",
+      "score": 52.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-09",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-10",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-11",
+      "score": 52.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-12",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-16",
+      "score": 53.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-17",
+      "score": 53.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-18",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-19",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-22",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-23",
+      "score": 53.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-24",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-25",
+      "score": 53.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-26",
+      "score": 53.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-29",
+      "score": 50.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-30",
+      "score": 51,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-01-31",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-01",
+      "score": 51,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-02",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-05",
+      "score": 51.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-06",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-07",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-08",
+      "score": 51.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-09",
+      "score": 51.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-12",
+      "score": 51.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-13",
+      "score": 52.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-14",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-15",
+      "score": 52.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-16",
+      "score": 51.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-20",
+      "score": 51.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-21",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-22",
+      "score": 52.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-23",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-26",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-27",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-28",
+      "score": 52.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-02-29",
+      "score": 53.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-01",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-04",
+      "score": 53.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-05",
+      "score": 53.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-06",
+      "score": 53.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-07",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-08",
+      "score": 52.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-11",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-12",
+      "score": 53.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-13",
+      "score": 53.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-14",
+      "score": 53.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-15",
+      "score": 54.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-18",
+      "score": 54.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-19",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-20",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-21",
+      "score": 54.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-22",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-25",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-26",
+      "score": 55.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-27",
+      "score": 56.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-03-28",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-01",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-02",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-03",
+      "score": 53,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-04",
+      "score": 52.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-05",
+      "score": 53.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-08",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-09",
+      "score": 52.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-10",
+      "score": 54.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-11",
+      "score": 56.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-12",
+      "score": 56.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-15",
+      "score": 57.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-16",
+      "score": 57.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-17",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-04-18",
+      "score": 57.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-19",
+      "score": 58.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-04-22",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-04-23",
+      "score": 57.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-04-24",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-04-25",
+      "score": 58.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-04-26",
+      "score": 59.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-04-29",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-04-30",
+      "score": 59.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-05-01",
+      "score": 57.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-02",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-03",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-06",
+      "score": 55.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-07",
+      "score": 55.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-08",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-09",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-10",
+      "score": 55.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-13",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-14",
+      "score": 55.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-15",
+      "score": 53.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-16",
+      "score": 53.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-17",
+      "score": 54.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-20",
+      "score": 54,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-21",
+      "score": 54,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-22",
+      "score": 54.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-23",
+      "score": 54.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-24",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-28",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-29",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-30",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-05-31",
+      "score": 57.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-03",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-06-04",
+      "score": 57.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-05",
+      "score": 57.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-06",
+      "score": 57.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-07",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-06-10",
+      "score": 58.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-06-11",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-06-12",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-13",
+      "score": 56.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-14",
+      "score": 56.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-17",
+      "score": 58.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-06-18",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-06-20",
+      "score": 57.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-21",
+      "score": 56.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-24",
+      "score": 56.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-25",
+      "score": 58,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-06-26",
+      "score": 59.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-06-27",
+      "score": 60.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-06-28",
+      "score": 59.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-07-01",
+      "score": 63.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-07-02",
+      "score": 61.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-07-03",
+      "score": 59,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-07-05",
+      "score": 57.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-08",
+      "score": 57.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-09",
+      "score": 59.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-07-10",
+      "score": 56.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-11",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-12",
+      "score": 56.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-15",
+      "score": 57.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-16",
+      "score": 57.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-17",
+      "score": 56.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-18",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-19",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-22",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-23",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-24",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-25",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-07-26",
+      "score": 58.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-07-29",
+      "score": 57.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-30",
+      "score": 57.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-07-31",
+      "score": 59.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-08-01",
+      "score": 57.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-02",
+      "score": 46.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-05",
+      "score": 50,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-06",
+      "score": 50.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-07",
+      "score": 51.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-08",
+      "score": 52.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-09",
+      "score": 53,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-12",
+      "score": 52.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-13",
+      "score": 52.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-14",
+      "score": 51.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-15",
+      "score": 53.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-16",
+      "score": 50.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-19",
+      "score": 50.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-20",
+      "score": 50.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-21",
+      "score": 49.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-22",
+      "score": 50,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-23",
+      "score": 50.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-26",
+      "score": 52.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-27",
+      "score": 53.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-28",
+      "score": 54.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-29",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-08-30",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-03",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-04",
+      "score": 50.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-05",
+      "score": 52.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-06",
+      "score": 51.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-09",
+      "score": 52.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-10",
+      "score": 50.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-11",
+      "score": 47.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-12",
+      "score": 49.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-13",
+      "score": 50.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-16",
+      "score": 54,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-17",
+      "score": 52.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-18",
+      "score": 51.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-19",
+      "score": 45.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-20",
+      "score": 48,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-23",
+      "score": 48.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-24",
+      "score": 44.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-25",
+      "score": 50.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-26",
+      "score": 50.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-27",
+      "score": 50.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-09-30",
+      "score": 54.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-01",
+      "score": 54.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-02",
+      "score": 55,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-03",
+      "score": 53.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-04",
+      "score": 52.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-07",
+      "score": 49.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-08",
+      "score": 51,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-09",
+      "score": 50.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-10",
+      "score": 50.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-11",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-15",
+      "score": 55.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-16",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-17",
+      "score": 54.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-18",
+      "score": 49.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-21",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-22",
+      "score": 55.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-23",
+      "score": 56.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-24",
+      "score": 55.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-25",
+      "score": 56.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-28",
+      "score": 57.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-29",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-30",
+      "score": 56.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-10-31",
+      "score": 63.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-11-01",
+      "score": 63.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-11-04",
+      "score": 58.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-11-05",
+      "score": 56.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-06",
+      "score": 56.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-07",
+      "score": 56.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-08",
+      "score": 59.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-11-12",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-11-13",
+      "score": 62.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-11-14",
+      "score": 61.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-11-15",
+      "score": 60.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-11-18",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-19",
+      "score": 55,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-20",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-21",
+      "score": 55.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-22",
+      "score": 55.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-25",
+      "score": 55.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-26",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-27",
+      "score": 54.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-11-29",
+      "score": 55,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-12-02",
+      "score": 59.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-03",
+      "score": 59.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-04",
+      "score": 54.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-12-05",
+      "score": 54.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2024-12-06",
+      "score": 59.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-09",
+      "score": 61.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-10",
+      "score": 62.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-11",
+      "score": 62.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-12",
+      "score": 62.4,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-13",
+      "score": 62.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-16",
+      "score": 65.1,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-17",
+      "score": 63.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-18",
+      "score": 60.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-19",
+      "score": 60.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-20",
+      "score": 60,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-23",
+      "score": 60.9,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-24",
+      "score": 61.6,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-26",
+      "score": 60.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-27",
+      "score": 61.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-30",
+      "score": 58.5,
+      "regime": "Tight"
+    },
+    {
+      "date": "2024-12-31",
+      "score": 60.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2025-01-02",
+      "score": 60.8,
+      "regime": "Tight"
+    },
+    {
+      "date": "2025-01-03",
+      "score": 55.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-06",
+      "score": 52.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-07",
+      "score": 53.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-08",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-09",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-10",
+      "score": 55.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-13",
+      "score": 54.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-14",
+      "score": 54.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-15",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-16",
+      "score": 53.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-17",
+      "score": 53.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-21",
+      "score": 52.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-22",
+      "score": 53.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-23",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-24",
+      "score": 55.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-27",
+      "score": 53.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-28",
+      "score": 54.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-29",
+      "score": 55.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-30",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-01-31",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2025-02-03",
+      "score": 55.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-04",
+      "score": 53.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-05",
+      "score": 53.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-06",
+      "score": 57,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-07",
+      "score": 57.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-10",
+      "score": 57.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-11",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-12",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-13",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-14",
+      "score": 53.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-18",
+      "score": 56.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-19",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-20",
+      "score": 55,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-21",
+      "score": 55,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-24",
+      "score": 55.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-25",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-26",
+      "score": 52.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-27",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-02-28",
+      "score": 56.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-03",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-04",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-05",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-06",
+      "score": 53,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-07",
+      "score": 52.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-10",
+      "score": 51.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-11",
+      "score": 49.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-12",
+      "score": 49.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-13",
+      "score": 48.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-14",
+      "score": 48.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-17",
+      "score": 50.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-18",
+      "score": 49.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-19",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-20",
+      "score": 49.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-21",
+      "score": 48.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-24",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-25",
+      "score": 52.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-26",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-27",
+      "score": 52.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-28",
+      "score": 50.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-03-31",
+      "score": 56.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-01",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-02",
+      "score": 50,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-03",
+      "score": 49.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-04",
+      "score": 50.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-07",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-08",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-09",
+      "score": 57.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-10",
+      "score": 54.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-11",
+      "score": 54.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-14",
+      "score": 51.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-15",
+      "score": 55.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-16",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-17",
+      "score": 52.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-21",
+      "score": 53.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-22",
+      "score": 49.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-23",
+      "score": 48.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-24",
+      "score": 46.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-25",
+      "score": 48.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-28",
+      "score": 50,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-29",
+      "score": 49.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-04-30",
+      "score": 53.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-01",
+      "score": 53.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-02",
+      "score": 51.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-05",
+      "score": 49.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-06",
+      "score": 49.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-07",
+      "score": 45.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-08",
+      "score": 46.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-09",
+      "score": 46.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-12",
+      "score": 44.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-13",
+      "score": 46.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-14",
+      "score": 45.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-15",
+      "score": 46.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-16",
+      "score": 47,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-19",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-20",
+      "score": 46.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-21",
+      "score": 47.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-22",
+      "score": 46.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-23",
+      "score": 45.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-27",
+      "score": 47.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-28",
+      "score": 50.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-29",
+      "score": 49.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-05-30",
+      "score": 49.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-02",
+      "score": 50.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-03",
+      "score": 49.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-04",
+      "score": 44.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-05",
+      "score": 46.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-06",
+      "score": 48.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-09",
+      "score": 47.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-10",
+      "score": 47.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-11",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-12",
+      "score": 43.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-13",
+      "score": 44.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-16",
+      "score": 48.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-17",
+      "score": 47.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-18",
+      "score": 46.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-20",
+      "score": 48.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-23",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-24",
+      "score": 47.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-25",
+      "score": 51.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-26",
+      "score": 51.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-27",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-06-30",
+      "score": 51,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-01",
+      "score": 51.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-02",
+      "score": 51.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-03",
+      "score": 48.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-07",
+      "score": 47.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-08",
+      "score": 45.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-09",
+      "score": 43.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-10",
+      "score": 43.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-11",
+      "score": 44.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-14",
+      "score": 45.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-15",
+      "score": 51.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-16",
+      "score": 47.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-17",
+      "score": 47.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-18",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-21",
+      "score": 44.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-22",
+      "score": 43.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-23",
+      "score": 42.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-24",
+      "score": 42.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-25",
+      "score": 46.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-28",
+      "score": 47.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-29",
+      "score": 44.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-30",
+      "score": 42.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-07-31",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-01",
+      "score": 44.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-04",
+      "score": 44.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-05",
+      "score": 45.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-06",
+      "score": 46.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-07",
+      "score": 46.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-08",
+      "score": 46.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-11",
+      "score": 40.6,
+      "regime": "Loose"
+    },
+    {
+      "date": "2025-08-12",
+      "score": 41.8,
+      "regime": "Loose"
+    },
+    {
+      "date": "2025-08-13",
+      "score": 39.5,
+      "regime": "Loose"
+    },
+    {
+      "date": "2025-08-14",
+      "score": 41.1,
+      "regime": "Loose"
+    },
+    {
+      "date": "2025-08-15",
+      "score": 51.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-18",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-19",
+      "score": 50,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-20",
+      "score": 49.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-21",
+      "score": 42.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-22",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-25",
+      "score": 45.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-26",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-27",
+      "score": 45.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-28",
+      "score": 43.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-08-29",
+      "score": 45.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-02",
+      "score": 49.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-03",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-04",
+      "score": 51.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-05",
+      "score": 55.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-08",
+      "score": 53,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-09",
+      "score": 44.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-10",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-11",
+      "score": 45.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-12",
+      "score": 45.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-15",
+      "score": 52.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-16",
+      "score": 44.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-17",
+      "score": 44.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-18",
+      "score": 45.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-19",
+      "score": 45.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-22",
+      "score": 47.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-23",
+      "score": 45.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-24",
+      "score": 46.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-25",
+      "score": 49.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-26",
+      "score": 47.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-29",
+      "score": 46.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-09-30",
+      "score": 49.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-01",
+      "score": 52.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-02",
+      "score": 51.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-03",
+      "score": 50.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-06",
+      "score": 44.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-07",
+      "score": 44.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-08",
+      "score": 43.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-09",
+      "score": 43.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-10",
+      "score": 44.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-14",
+      "score": 46.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-15",
+      "score": 46.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-16",
+      "score": 45.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-17",
+      "score": 45.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-20",
+      "score": 48.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-21",
+      "score": 51.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-22",
+      "score": 51.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-23",
+      "score": 50.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-24",
+      "score": 54.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-27",
+      "score": 54.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-28",
+      "score": 53.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-29",
+      "score": 54,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-30",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-10-31",
+      "score": 56.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-03",
+      "score": 52.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-04",
+      "score": 53.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-05",
+      "score": 51.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-06",
+      "score": 51.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-07",
+      "score": 51.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-10",
+      "score": 51.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-12",
+      "score": 48.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-13",
+      "score": 49.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-14",
+      "score": 48.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-17",
+      "score": 49.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-18",
+      "score": 47.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-19",
+      "score": 46.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-20",
+      "score": 46.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-21",
+      "score": 46.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-24",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-25",
+      "score": 48.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-26",
+      "score": 47.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-11-28",
+      "score": 47.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-01",
+      "score": 48.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-02",
+      "score": 48.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-03",
+      "score": 45.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-04",
+      "score": 45.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-05",
+      "score": 46.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-08",
+      "score": 47.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-09",
+      "score": 46.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-10",
+      "score": 46.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-11",
+      "score": 47.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-12",
+      "score": 50.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-15",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-16",
+      "score": 49.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-17",
+      "score": 49.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-18",
+      "score": 48.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-19",
+      "score": 49.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-22",
+      "score": 44.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-23",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-24",
+      "score": 42.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-26",
+      "score": 45.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-29",
+      "score": 45.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-30",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2025-12-31",
+      "score": 46.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-02",
+      "score": 45.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-05",
+      "score": 43.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-06",
+      "score": 42.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-07",
+      "score": 41.8,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-01-08",
+      "score": 42.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-09",
+      "score": 42.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-12",
+      "score": 42.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-13",
+      "score": 42.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-14",
+      "score": 41.1,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-01-15",
+      "score": 42.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-16",
+      "score": 42.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-20",
+      "score": 44.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-21",
+      "score": 43.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-22",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-23",
+      "score": 43.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-26",
+      "score": 42.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-27",
+      "score": 42.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-01-28",
+      "score": 41.6,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-01-29",
+      "score": 41.6,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-01-30",
+      "score": 43.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-02-02",
+      "score": 44.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-02-03",
+      "score": 43.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-02-04",
+      "score": 42.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-02-05",
+      "score": 41.5,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-06",
+      "score": 41.5,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-09",
+      "score": 40.6,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-10",
+      "score": 40,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-11",
+      "score": 39.9,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-12",
+      "score": 38.2,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-13",
+      "score": 38.2,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-17",
+      "score": 40.7,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-18",
+      "score": 42,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-19",
+      "score": 40.3,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-20",
+      "score": 39.6,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-23",
+      "score": 38.8,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-24",
+      "score": 39.3,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-25",
+      "score": 39.1,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-26",
+      "score": 38.6,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-02-27",
+      "score": 38.8,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-03-02",
+      "score": 43.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-03",
+      "score": 44.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-04",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-05",
+      "score": 44.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-06",
+      "score": 44.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-09",
+      "score": 42.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-10",
+      "score": 42.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-11",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-12",
+      "score": 46.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-13",
+      "score": 50.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-16",
+      "score": 50,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-17",
+      "score": 49,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-18",
+      "score": 49.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-19",
+      "score": 48.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-20",
+      "score": 50.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-23",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-24",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-25",
+      "score": 46.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-26",
+      "score": 49.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-27",
+      "score": 50.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-30",
+      "score": 48.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-03-31",
+      "score": 49.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-01",
+      "score": 53.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-02",
+      "score": 52.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-03",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-06",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-07",
+      "score": 50.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-08",
+      "score": 49,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-09",
+      "score": 48.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-10",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-13",
+      "score": 43.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-14",
+      "score": 41.4,
+      "regime": "Loose"
+    },
+    {
+      "date": "2026-04-15",
+      "score": 43.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-16",
+      "score": 45.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-17",
+      "score": 44,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-20",
+      "score": 43.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-21",
+      "score": 44.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-22",
+      "score": 45,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-23",
+      "score": 45.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-24",
+      "score": 46.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-27",
+      "score": 50.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-28",
+      "score": 50.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-29",
+      "score": 48.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-04-30",
+      "score": 50.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-01",
+      "score": 48.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-04",
+      "score": 48.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-05",
+      "score": 47.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-06",
+      "score": 45.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-07",
+      "score": 45.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-08",
+      "score": 45.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-11",
+      "score": 43.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-12",
+      "score": 46.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-13",
+      "score": 45.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-14",
+      "score": 45.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-15",
+      "score": 48,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-18",
+      "score": 48.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-19",
+      "score": 49.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-20",
+      "score": 48.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-21",
+      "score": 48.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-22",
+      "score": 49.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-26",
+      "score": 50.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-27",
+      "score": 51.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-28",
+      "score": 49.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-05-29",
+      "score": 46.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-01",
+      "score": 47.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-02",
+      "score": 46.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-03",
+      "score": 51.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-04",
+      "score": 51.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-05",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-08",
+      "score": 52.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-09",
+      "score": 50.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-10",
+      "score": 50.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-11",
+      "score": 50,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-12",
+      "score": 51.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-15",
+      "score": 52.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-16",
+      "score": 50.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-17",
+      "score": 50.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-18",
+      "score": 50.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-22",
+      "score": 50.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-23",
+      "score": 51,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-24",
+      "score": 50.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-25",
+      "score": 50.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-26",
+      "score": 52.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-29",
+      "score": 49.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-06-30",
+      "score": 52.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-01",
+      "score": 54,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-02",
+      "score": 54.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-06",
+      "score": 51.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-07",
+      "score": 53.1,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-08",
+      "score": 52,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-09",
+      "score": 50,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-10",
+      "score": 50.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-13",
+      "score": 53.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-14",
+      "score": 53.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-15",
+      "score": 52.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-16",
+      "score": 52.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-17",
+      "score": 51.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-20",
+      "score": 51.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-21",
+      "score": 50.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-22",
+      "score": 49.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-23",
+      "score": 50.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-24",
+      "score": 49.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-27",
+      "score": 51,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-28",
+      "score": 52.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-29",
+      "score": 56,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-30",
+      "score": 57.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-07-31",
+      "score": 58.7,
+      "regime": "Tight"
+    },
+    {
+      "date": "2026-08-03",
+      "score": 55.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-04",
+      "score": 54.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-05",
+      "score": 54.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-06",
+      "score": 55.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-07",
+      "score": 54.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-10",
+      "score": 54.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-11",
+      "score": 54.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-12",
+      "score": 55.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-13",
+      "score": 55.6,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-14",
+      "score": 55.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-17",
+      "score": 56.9,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-18",
+      "score": 53.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-19",
+      "score": 51.2,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-20",
+      "score": 51.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-21",
+      "score": 52.4,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-24",
+      "score": 52.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-25",
+      "score": 51.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-26",
+      "score": 51.7,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-27",
+      "score": 53,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-28",
+      "score": 53.3,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-08-31",
+      "score": 52.8,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-09-01",
+      "score": 52.5,
+      "regime": "Neutral"
+    },
+    {
+      "date": "2026-09-02",
+      "score": 58.2,
+      "regime": "Tight"
+    },
+    {
+      "date": "2026-09-03",
+      "score": 59,
+      "regime": "Tight"
+    }
+  ],
+  "sourceHealth": [
+    {
+      "id": "DGS2",
+      "name": "2-Year Treasury Yield",
+      "source": "Federal Reserve H.15",
+      "status": "ok",
+      "latestDate": "2026-09-03",
+      "latestValue": 4.34
+    },
+    {
+      "id": "DGS10",
+      "name": "10-Year Treasury Yield",
+      "source": "Federal Reserve H.15",
+      "status": "ok",
+      "latestDate": "2026-09-03",
+      "latestValue": 4.77
+    },
+    {
+      "id": "DFII10",
+      "name": "10-Year Real Treasury Yield",
+      "source": "Federal Reserve H.15",
+      "status": "ok",
+      "latestDate": "2026-09-03",
+      "latestValue": 2.42
+    },
+    {
+      "id": "DCPN3M",
+      "name": "90-Day AA Nonfinancial Commercial Paper Rate",
+      "source": "Federal Reserve H.15",
+      "status": "ok",
+      "latestDate": "2026-09-03",
+      "latestValue": 3.85
+    },
+    {
+      "id": "DTB3",
+      "name": "3-Month Treasury Bill Rate",
+      "source": "Federal Reserve H.15",
+      "status": "ok",
+      "latestDate": "2026-09-03",
+      "latestValue": 3.75
+    },
+    {
+      "id": "SOFR",
+      "name": "Secured Overnight Financing Rate",
+      "source": "Federal Reserve Bank of New York",
+      "status": "ok",
+      "latestDate": "2026-09-03",
+      "latestValue": 3.66
+    },
+    {
+      "id": "IORB",
+      "name": "Interest Rate on Reserve Balances",
+      "source": "Federal Reserve Board",
+      "status": "ok",
+      "latestDate": "2026-09-08",
+      "latestValue": 3.65
+    },
+    {
+      "id": "IOER",
+      "name": "Interest Rate on Excess Reserves",
+      "source": "Federal Reserve Board",
+      "status": "ok",
+      "latestDate": "2021-07-28",
+      "latestValue": 0.15
+    },
+    {
+      "id": "DTWEXBGS",
+      "name": "Nominal Broad U.S. Dollar Index",
+      "source": "Federal Reserve H.10",
+      "status": "ok",
+      "latestDate": "2026-08-28",
+      "latestValue": 118.7479
+    },
+    {
+      "id": "WRESBAL",
+      "name": "Reserve Balances with Federal Reserve Banks",
+      "source": "Federal Reserve H.4.1",
+      "status": "ok",
+      "latestDate": "2026-09-02",
+      "latestValue": 2894531
+    }
+  ],
   "methodology": {
     "name": "BondStats Financial Conditions Index",
     "shortName": "BS-FCI",
-    "scale": "0\u2013100; higher values indicate tighter financial conditions",
-    "normalization": "Rolling two-year z-scores, winsorized to \u00b13 standard deviations",
-    "mapping": "Composite z-score mapped to a 0\u2013100 scale centered on 50",
+    "scale": "0–100; higher values indicate tighter financial conditions",
+    "normalization": "Rolling two-year z-scores, winsorized to ±3 standard deviations",
+    "mapping": "Composite z-score mapped to a 0–100 scale centered on 50",
     "regimes": [
       {
         "min": 0,
@@ -52,44 +6712,45 @@
         "id": "real_rates",
         "label": "Real-rate pressure",
         "weight": 0.2,
-        "direction": "higher=tighter"
+        "description": "Higher real yields increase the real cost of capital and tighten duration-sensitive financial conditions."
       },
       {
         "id": "cp_spread",
         "label": "Commercial-paper spread",
         "weight": 0.2,
-        "direction": "higher=tighter"
+        "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
       },
       {
         "id": "dollar",
         "label": "Dollar pressure",
         "weight": 0.15,
-        "direction": "higher=tighter"
+        "description": "A stronger broad U.S. dollar can tighten global dollar funding and external financial conditions."
       },
       {
         "id": "funding",
         "label": "Overnight funding spread",
         "weight": 0.15,
-        "direction": "higher=tighter"
+        "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
       },
       {
         "id": "curve",
         "label": "Yield-curve inversion",
         "weight": 0.1,
-        "direction": "more inversion=tighter"
+        "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
       },
       {
         "id": "reserve_liquidity",
         "label": "Reserve-liquidity pressure",
         "weight": 0.1,
-        "direction": "falling reserves=tighter"
+        "description": "Falling reserve balances increase the liquidity-pressure contribution to the index."
       },
       {
         "id": "long_yield",
         "label": "Long-end yield pressure",
         "weight": 0.1,
-        "direction": "higher=tighter"
+        "description": "Higher long-term Treasury yields tighten financing conditions for duration-sensitive borrowers and assets."
       }
-    ]
+    ],
+    "note": "The BS-FCI is a BondStats analytical composite, not an official Federal Reserve index. It uses official market and funding series and applies BondStats normalization and weighting."
   }
 }
