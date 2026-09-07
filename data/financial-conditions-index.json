@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "status": "awaiting-first-refresh",
+  "generatedAt": null,
+  "asOfDate": null,
+  "index": {
+    "score": null,
+    "regime": "Awaiting live calculation",
+    "change1w": null,
+    "change1m": null,
+    "momentum": "\u2014",
+    "mainDriver": "\u2014"
+  },
+  "components": [],
+  "history": [],
+  "sourceHealth": [],
+  "methodology": {
+    "name": "BondStats Financial Conditions Index",
+    "shortName": "BS-FCI",
+    "scale": "0\u2013100; higher values indicate tighter financial conditions",
+    "normalization": "Rolling two-year z-scores, winsorized to \u00b13 standard deviations",
+    "mapping": "Composite z-score mapped to a 0\u2013100 scale centered on 50",
+    "regimes": [
+      {
+        "min": 0,
+        "max": 25,
+        "label": "Very Loose"
+      },
+      {
+        "min": 25,
+        "max": 42,
+        "label": "Loose"
+      },
+      {
+        "min": 42,
+        "max": 58,
+        "label": "Neutral"
+      },
+      {
+        "min": 58,
+        "max": 75,
+        "label": "Tight"
+      },
+      {
+        "min": 75,
+        "max": 100,
+        "label": "Very Tight"
+      }
+    ],
+    "factors": [
+      {
+        "id": "real_rates",
+        "label": "Real-rate pressure",
+        "weight": 0.2,
+        "direction": "higher=tighter"
+      },
+      {
+        "id": "cp_spread",
+        "label": "Commercial-paper spread",
+        "weight": 0.2,
+        "direction": "higher=tighter"
+      },
+      {
+        "id": "dollar",
+        "label": "Dollar pressure",
+        "weight": 0.15,
+        "direction": "higher=tighter"
+      },
+      {
+        "id": "funding",
+        "label": "Overnight funding spread",
+        "weight": 0.15,
+        "direction": "higher=tighter"
+      },
+      {
+        "id": "curve",
+        "label": "Yield-curve inversion",
+        "weight": 0.1,
+        "direction": "more inversion=tighter"
+      },
+      {
+        "id": "reserve_liquidity",
+        "label": "Reserve-liquidity pressure",
+        "weight": 0.1,
+        "direction": "falling reserves=tighter"
+      },
+      {
+        "id": "long_yield",
+        "label": "Long-end yield pressure",
+        "weight": 0.1,
+        "direction": "higher=tighter"
+      }
+    ]
+  }
+}

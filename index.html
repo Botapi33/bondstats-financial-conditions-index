@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BondStats Financial Conditions Index</title>
+  <meta name="description" content="BondStats Financial Conditions Index: a live composite of real rates, the yield curve, funding, the dollar and reserve liquidity.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="lab">
+    <header class="mast">
+      <div class="brand">BONDSTATS <span>CONDITIONS LAB</span></div>
+      <div class="fresh"><i></i><span id="freshness">awaiting live calculation</span></div>
+    </header>
+
+    <section class="intro">
+      <div class="intro-copy">
+        <div class="eyebrow">BS-FCI · PROPRIETARY COMPOSITE</div>
+        <h1>Financial<br>Conditions Index</h1>
+        <p>A market-based measure of how easy or restrictive financial conditions are across rates, the curve, short-term funding, the dollar and reserve liquidity.</p>
+      </div>
+
+      <div class="readout">
+        <div class="readout-head">
+          <span>Current conditions</span>
+          <span id="asOf">—</span>
+        </div>
+        <div class="score-line">
+          <strong id="score">—</strong>
+          <div>
+            <b id="regime">Awaiting live calculation</b>
+            <small>0 = loose · 100 = tight</small>
+          </div>
+        </div>
+        <div class="delta-line">
+          <span>1W <b id="change1w">—</b></span>
+          <span>1M <b id="change1m">—</b></span>
+          <span>Momentum <b id="momentum">—</b></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="continuum-section">
+      <div class="section-label">CONDITIONS CONTINUUM</div>
+      <div class="continuum" id="continuum">
+        <div class="track"></div>
+        <div class="pointer" id="pointer"><span id="pointerValue">—</span></div>
+        <div class="ticks">
+          <span>Very Loose</span><span>Loose</span><span>Neutral</span><span>Tight</span><span>Very Tight</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ledger-section">
+      <div class="section-head">
+        <div>
+          <div class="section-label">PRESSURE LEDGER</div>
+          <h2>What is tightening — and what is easing?</h2>
+        </div>
+        <div class="driver">Main driver <strong id="mainDriver">—</strong></div>
+      </div>
+      <div id="ledger" class="ledger">
+        <div class="empty">Run the GitHub Action once to calculate the live index.</div>
+      </div>
+    </section>
+
+    <section class="history-section">
+      <div class="section-head">
+        <div>
+          <div class="section-label">CONDITIONS TRACE</div>
+          <h2>How the regime has moved</h2>
+        </div>
+        <div class="range-controls">
+          <button data-range="252">1Y</button>
+          <button data-range="756" class="active">3Y</button>
+          <button data-range="1300">5Y</button>
+        </div>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="historyChart" height="380"></canvas>
+        <div class="chart-axis"><span>Loose</span><span>Neutral</span><span>Tight</span></div>
+      </div>
+    </section>
+
+    <section class="method">
+      <div class="method-index">01</div>
+      <div>
+        <div class="section-label">METHOD</div>
+        <h2>Built from observable market pressure.</h2>
+      </div>
+      <p>The BS-FCI standardizes seven market and funding factors over a rolling two-year window, applies fixed BondStats weights and maps the composite onto a 0–100 scale. Higher readings indicate tighter conditions.</p>
+    </section>
+
+    <section class="source-strip">
+      <div class="section-label">SOURCE HEALTH</div>
+      <div id="sourceHealth">Awaiting first refresh.</div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

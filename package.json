@@ -1,0 +1,13 @@
+{
+  "name": "bondstats-financial-conditions-index",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update-financial-conditions-index.mjs",
+    "check": "node --check scripts/update-financial-conditions-index.mjs && node --check app.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
