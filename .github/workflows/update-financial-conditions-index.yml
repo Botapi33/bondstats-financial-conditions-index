@@ -1,0 +1,48 @@
+name: Update Financial Conditions Index
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */4 * * 1-5'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: financial-conditions-index-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Calculate live BondStats FCI
+        run: node scripts/update-financial-conditions-index.mjs
+
+      - name: Validate output
+        run: |
+          node -e "const fs=require('fs');const d=JSON.parse(fs.readFileSync('data/financial-conditions-index.json','utf8'));if(d.index?.score==null||!Array.isArray(d.components)||!Array.isArray(d.history))process.exit(1);console.log('score='+d.index.score+', regime='+d.index.regime+', history='+d.history.length);"
+
+      - name: Commit updated index
+        shell: bash
+        run: |
+          if git diff --quiet -- data/financial-conditions-index.json; then
+            echo "No FCI changes."
+            exit 0
+          fi
+
+          git config user.name "bondstats-fci-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/financial-conditions-index.json
+          git commit -m "chore: refresh financial conditions index"
+          git push
