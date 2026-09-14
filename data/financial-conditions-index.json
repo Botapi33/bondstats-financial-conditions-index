@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-09-14T05:08:04.972Z",
+  "generatedAt": "2026-09-14T15:05:29.150Z",
   "asOfDate": "2026-09-10",
   "index": {
     "score": 53.3,
@@ -6638,7 +6638,7 @@
       "name": "Secured Overnight Financing Rate",
       "source": "Federal Reserve Bank of New York",
       "status": "ok",
-      "latestDate": "2026-09-10",
+      "latestDate": "2026-09-11",
       "latestValue": 3.62
     },
     {
