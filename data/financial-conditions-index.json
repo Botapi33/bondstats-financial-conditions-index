@@ -1,12 +1,12 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-09-15T19:44:13.915Z",
-  "asOfDate": "2026-09-11",
+  "generatedAt": "2026-09-15T22:58:05.877Z",
+  "asOfDate": "2026-09-14",
   "index": {
-    "score": 52.3,
+    "score": 52.4,
     "regime": "Neutral",
-    "change1w": -6.3,
+    "change1w": -5.4,
     "change1m": -3.2,
     "momentum": "Easing",
     "mainDriver": "Commercial-paper spread"
@@ -16,7 +16,7 @@
       "id": "cp_spread",
       "label": "Commercial-paper spread",
       "weight": 0.2,
-      "rawValue": -12,
+      "rawValue": -17,
       "unit": "bp",
       "zScore": -3,
       "contribution": -0.6,
@@ -29,8 +29,8 @@
       "weight": 0.2,
       "rawValue": 2.6,
       "unit": "%",
-      "zScore": 2.94,
-      "contribution": 0.588,
+      "zScore": 2.91,
+      "contribution": 0.582,
       "pressure": "tightening",
       "description": "Higher real yields increase the real cost of capital and tighten duration-sensitive financial conditions."
     },
@@ -38,10 +38,10 @@
       "id": "long_yield",
       "label": "Long-end yield pressure",
       "weight": 0.1,
-      "rawValue": 4.96,
+      "rawValue": 4.97,
       "unit": "%",
-      "zScore": 2.8,
-      "contribution": 0.28,
+      "zScore": 2.83,
+      "contribution": 0.283,
       "pressure": "tightening",
       "description": "Higher long-term Treasury yields tighten financing conditions for duration-sensitive borrowers and assets."
     },
@@ -52,7 +52,7 @@
       "rawValue": 118.21,
       "unit": "index",
       "zScore": -1.14,
-      "contribution": -0.171,
+      "contribution": -0.17,
       "pressure": "easing",
       "description": "A stronger broad U.S. dollar can tighten global dollar funding and external financial conditions."
     },
@@ -60,10 +60,10 @@
       "id": "curve",
       "label": "Yield-curve inversion",
       "weight": 0.1,
-      "rawValue": -33,
+      "rawValue": -32,
       "unit": "bp",
-      "zScore": 0.59,
-      "contribution": 0.059,
+      "zScore": 0.65,
+      "contribution": 0.065,
       "pressure": "tightening",
       "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
     },
@@ -91,11 +91,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2021-06-30",
-      "score": 43.5,
-      "regime": "Neutral"
-    },
     {
       "date": "2021-07-01",
       "score": 43.7,
@@ -6590,6 +6585,11 @@
       "date": "2026-09-11",
       "score": 52.3,
       "regime": "Neutral"
+    },
+    {
+      "date": "2026-09-14",
+      "score": 52.4,
+      "regime": "Neutral"
     }
   ],
   "sourceHealth": [
@@ -6598,23 +6598,23 @@
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-09-11",
-      "latestValue": 4.63
+      "latestDate": "2026-09-14",
+      "latestValue": 4.65
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-09-11",
-      "latestValue": 4.96
+      "latestDate": "2026-09-14",
+      "latestValue": 4.97
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-09-11",
+      "latestDate": "2026-09-14",
       "latestValue": 2.6
     },
     {
@@ -6630,8 +6630,8 @@
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-09-11",
-      "latestValue": 3.92
+      "latestDate": "2026-09-14",
+      "latestValue": 3.97
     },
     {
       "id": "SOFR",
@@ -6646,7 +6646,7 @@
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
       "status": "ok",
-      "latestDate": "2026-09-15",
+      "latestDate": "2026-09-16",
       "latestValue": 3.65
     },
     {
