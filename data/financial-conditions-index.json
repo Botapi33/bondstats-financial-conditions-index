@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-09-21T20:28:37.084Z",
+  "generatedAt": "2026-09-22T05:09:31.998Z",
   "asOfDate": "2026-09-18",
   "index": {
     "score": 60.4,
@@ -6646,7 +6646,7 @@
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
       "status": "ok",
-      "latestDate": "2026-09-21",
+      "latestDate": "2026-09-22",
       "latestValue": 3.9
     },
     {
