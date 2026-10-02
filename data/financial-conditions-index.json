@@ -1,13 +1,13 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-10-02T14:48:12.088Z",
-  "asOfDate": "2026-09-30",
+  "generatedAt": "2026-10-02T20:49:27.666Z",
+  "asOfDate": "2026-10-01",
   "index": {
-    "score": 60.6,
+    "score": 60.5,
     "regime": "Tight",
-    "change1w": 0.4,
-    "change1m": 7.9,
+    "change1w": 1.6,
+    "change1m": 8,
     "momentum": "Tightening",
     "mainDriver": "Real-rate pressure"
   },
@@ -16,7 +16,7 @@
       "id": "real_rates",
       "label": "Real-rate pressure",
       "weight": 0.2,
-      "rawValue": 2.93,
+      "rawValue": 2.88,
       "unit": "%",
       "zScore": 3,
       "contribution": 0.6,
@@ -27,7 +27,7 @@
       "id": "long_yield",
       "label": "Long-end yield pressure",
       "weight": 0.1,
-      "rawValue": 5.29,
+      "rawValue": 5.24,
       "unit": "%",
       "zScore": 3,
       "contribution": 0.3,
@@ -46,37 +46,37 @@
       "description": "A stronger broad U.S. dollar can tighten global dollar funding and external financial conditions."
     },
     {
-      "id": "funding",
-      "label": "Overnight funding spread",
-      "weight": 0.15,
-      "rawValue": 0,
-      "unit": "bp",
-      "zScore": 0.42,
-      "contribution": 0.063,
-      "pressure": "tightening",
-      "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
-    },
-    {
       "id": "cp_spread",
       "label": "Commercial-paper spread",
       "weight": 0.2,
-      "rawValue": 5,
+      "rawValue": 8,
       "unit": "bp",
-      "zScore": -0.27,
-      "contribution": -0.054,
-      "pressure": "easing",
+      "zScore": 0.2,
+      "contribution": 0.04,
+      "pressure": "tightening",
       "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
     },
     {
       "id": "curve",
       "label": "Yield-curve inversion",
       "weight": 0.1,
-      "rawValue": -41,
+      "rawValue": -46,
       "unit": "bp",
-      "zScore": 0.17,
-      "contribution": 0.017,
+      "zScore": -0.13,
+      "contribution": -0.013,
       "pressure": "neutral",
       "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
+    },
+    {
+      "id": "funding",
+      "label": "Overnight funding spread",
+      "weight": 0.15,
+      "rawValue": -3,
+      "unit": "bp",
+      "zScore": -0.07,
+      "contribution": -0.01,
+      "pressure": "neutral",
+      "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
     },
     {
       "id": "reserve_liquidity",
@@ -91,11 +91,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2021-07-20",
-      "score": 43.5,
-      "regime": "Neutral"
-    },
     {
       "date": "2021-07-21",
       "score": 43.4,
@@ -6590,6 +6585,11 @@
       "date": "2026-09-30",
       "score": 60.6,
       "regime": "Tight"
+    },
+    {
+      "date": "2026-10-01",
+      "score": 60.5,
+      "regime": "Tight"
     }
   ],
   "sourceHealth": [
@@ -6598,24 +6598,24 @@
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-09-30",
-      "latestValue": 4.88
+      "latestDate": "2026-10-01",
+      "latestValue": 4.78
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-09-30",
-      "latestValue": 5.29
+      "latestDate": "2026-10-01",
+      "latestValue": 5.24
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-09-30",
-      "latestValue": 2.93
+      "latestDate": "2026-10-01",
+      "latestValue": 2.88
     },
     {
       "id": "DCPN3M",
@@ -6630,8 +6630,8 @@
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-09-30",
-      "latestValue": 4.03
+      "latestDate": "2026-10-01",
+      "latestValue": 4
     },
     {
       "id": "SOFR",
@@ -6646,7 +6646,7 @@
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
       "status": "ok",
-      "latestDate": "2026-10-02",
+      "latestDate": "2026-10-05",
       "latestValue": 3.9
     },
     {
