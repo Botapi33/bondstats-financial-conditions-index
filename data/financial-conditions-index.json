@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-10-05T17:14:32.788Z",
-  "asOfDate": "2026-10-01",
+  "generatedAt": "2026-10-06T01:21:12.191Z",
+  "asOfDate": "2026-10-02",
   "index": {
-    "score": 60.5,
+    "score": 58.3,
     "regime": "Tight",
-    "change1w": 1.6,
-    "change1m": 8,
-    "momentum": "Tightening",
+    "change1w": -0.7,
+    "change1m": 0.2,
+    "momentum": "Stable",
     "mainDriver": "Real-rate pressure"
   },
   "components": [
@@ -16,7 +16,7 @@
       "id": "real_rates",
       "label": "Real-rate pressure",
       "weight": 0.2,
-      "rawValue": 2.88,
+      "rawValue": 2.92,
       "unit": "%",
       "zScore": 3,
       "contribution": 0.6,
@@ -27,7 +27,7 @@
       "id": "long_yield",
       "label": "Long-end yield pressure",
       "weight": 0.1,
-      "rawValue": 5.24,
+      "rawValue": 5.28,
       "unit": "%",
       "zScore": 3,
       "contribution": 0.3,
@@ -35,46 +35,35 @@
       "description": "Higher long-term Treasury yields tighten financing conditions for duration-sensitive borrowers and assets."
     },
     {
-      "id": "dollar",
-      "label": "Dollar pressure",
-      "weight": 0.15,
-      "rawValue": 120.33,
-      "unit": "index",
-      "zScore": -0.46,
-      "contribution": -0.069,
-      "pressure": "easing",
-      "description": "A stronger broad U.S. dollar can tighten global dollar funding and external financial conditions."
-    },
-    {
       "id": "cp_spread",
       "label": "Commercial-paper spread",
       "weight": 0.2,
-      "rawValue": 8,
+      "rawValue": null,
       "unit": "bp",
-      "zScore": 0.2,
-      "contribution": 0.04,
-      "pressure": "tightening",
+      "zScore": -1.06,
+      "contribution": -0.213,
+      "pressure": "easing",
       "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
     },
     {
-      "id": "curve",
-      "label": "Yield-curve inversion",
-      "weight": 0.1,
-      "rawValue": -46,
-      "unit": "bp",
+      "id": "dollar",
+      "label": "Dollar pressure",
+      "weight": 0.15,
+      "rawValue": 121.38,
+      "unit": "index",
       "zScore": -0.13,
-      "contribution": -0.013,
+      "contribution": -0.02,
       "pressure": "neutral",
-      "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
+      "description": "A stronger broad U.S. dollar can tighten global dollar funding and external financial conditions."
     },
     {
       "id": "funding",
       "label": "Overnight funding spread",
       "weight": 0.15,
-      "rawValue": -3,
+      "rawValue": -2,
       "unit": "bp",
-      "zScore": -0.07,
-      "contribution": -0.01,
+      "zScore": 0.09,
+      "contribution": 0.014,
       "pressure": "neutral",
       "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
     },
@@ -88,14 +77,20 @@
       "contribution": -0.009,
       "pressure": "neutral",
       "description": "Falling reserve balances increase the liquidity-pressure contribution to the index."
+    },
+    {
+      "id": "curve",
+      "label": "Yield-curve inversion",
+      "weight": 0.1,
+      "rawValue": -45,
+      "unit": "bp",
+      "zScore": -0.07,
+      "contribution": -0.007,
+      "pressure": "neutral",
+      "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
     }
   ],
   "history": [
-    {
-      "date": "2021-07-21",
-      "score": 43.4,
-      "regime": "Neutral"
-    },
     {
       "date": "2021-07-22",
       "score": 43.3,
@@ -6573,22 +6568,27 @@
     },
     {
       "date": "2026-09-28",
-      "score": 58.5,
-      "regime": "Tight"
-    },
-    {
-      "date": "2026-09-29",
       "score": 58.7,
       "regime": "Tight"
     },
     {
+      "date": "2026-09-29",
+      "score": 59.1,
+      "regime": "Tight"
+    },
+    {
       "date": "2026-09-30",
-      "score": 60.6,
+      "score": 61,
       "regime": "Tight"
     },
     {
       "date": "2026-10-01",
-      "score": 60.5,
+      "score": 61.3,
+      "regime": "Tight"
+    },
+    {
+      "date": "2026-10-02",
+      "score": 58.3,
       "regime": "Tight"
     }
   ],
@@ -6598,24 +6598,24 @@
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-01",
-      "latestValue": 4.78
+      "latestDate": "2026-10-02",
+      "latestValue": 4.83
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-01",
-      "latestValue": 5.24
+      "latestDate": "2026-10-02",
+      "latestValue": 5.28
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-01",
-      "latestValue": 2.88
+      "latestDate": "2026-10-02",
+      "latestValue": 2.92
     },
     {
       "id": "DCPN3M",
@@ -6630,8 +6630,8 @@
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-01",
-      "latestValue": 4
+      "latestDate": "2026-10-02",
+      "latestValue": 4.01
     },
     {
       "id": "SOFR",
@@ -6646,7 +6646,7 @@
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
       "status": "ok",
-      "latestDate": "2026-10-05",
+      "latestDate": "2026-10-06",
       "latestValue": 3.9
     },
     {
@@ -6662,8 +6662,8 @@
       "name": "Nominal Broad U.S. Dollar Index",
       "source": "Federal Reserve H.10",
       "status": "ok",
-      "latestDate": "2026-09-25",
-      "latestValue": 120.33
+      "latestDate": "2026-10-02",
+      "latestValue": 121.3848
     },
     {
       "id": "WRESBAL",
