@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "status": "live",
+  "status": "stale",
   "generatedAt": "2026-10-08T21:23:56.357Z",
   "asOfDate": "2026-10-07",
   "index": {
@@ -6597,81 +6597,71 @@
       "id": "DGS2",
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
-      "status": "ok",
-      "latestDate": "2026-10-07",
-      "latestValue": 4.77
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
-      "status": "ok",
-      "latestDate": "2026-10-07",
-      "latestValue": 5.28
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
-      "status": "ok",
-      "latestDate": "2026-10-07",
-      "latestValue": 2.92
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "DCPN3M",
       "name": "90-Day AA Nonfinancial Commercial Paper Rate",
       "source": "Federal Reserve H.15",
-      "status": "ok",
-      "latestDate": "2026-10-07",
-      "latestValue": 4.09
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "DTB3",
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
-      "status": "ok",
-      "latestDate": "2026-10-07",
-      "latestValue": 4.05
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "SOFR",
       "name": "Secured Overnight Financing Rate",
       "source": "Federal Reserve Bank of New York",
-      "status": "ok",
-      "latestDate": "2026-10-07",
-      "latestValue": 3.88
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "IORB",
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
-      "status": "ok",
-      "latestDate": "2026-10-09",
-      "latestValue": 3.9
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "IOER",
       "name": "Interest Rate on Excess Reserves",
       "source": "Federal Reserve Board",
-      "status": "ok",
-      "latestDate": "2021-07-28",
-      "latestValue": 0.15
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "DTWEXBGS",
       "name": "Nominal Broad U.S. Dollar Index",
       "source": "Federal Reserve H.10",
-      "status": "ok",
-      "latestDate": "2026-10-02",
-      "latestValue": 121.3848
+      "status": "error",
+      "error": "This operation was aborted"
     },
     {
       "id": "WRESBAL",
       "name": "Reserve Balances with Federal Reserve Banks",
       "source": "Federal Reserve H.4.1",
-      "status": "ok",
-      "latestDate": "2026-10-07",
-      "latestValue": 3029659
+      "status": "error",
+      "error": "This operation was aborted"
     }
   ],
   "methodology": {
@@ -6752,5 +6742,6 @@
       }
     ],
     "note": "The BS-FCI is a BondStats analytical composite, not an official Federal Reserve index. It uses official market and funding series and applies BondStats normalization and weighting."
-  }
+  },
+  "refreshAttemptAt": "2026-10-09T06:32:19.543Z"
 }
