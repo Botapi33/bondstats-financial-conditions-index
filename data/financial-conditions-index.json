@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "status": "stale",
-  "generatedAt": "2026-10-08T21:23:56.357Z",
-  "asOfDate": "2026-10-07",
+  "status": "live",
+  "generatedAt": "2026-10-12T06:11:21.216Z",
+  "asOfDate": "2026-10-08",
   "index": {
     "score": 59.9,
     "regime": "Tight",
-    "change1w": -1.1,
-    "change1m": 3.6,
+    "change1w": -1.4,
+    "change1m": 3.4,
     "momentum": "Tightening",
     "mainDriver": "Real-rate pressure"
   },
@@ -16,7 +16,7 @@
       "id": "real_rates",
       "label": "Real-rate pressure",
       "weight": 0.2,
-      "rawValue": 2.92,
+      "rawValue": 2.87,
       "unit": "%",
       "zScore": 3,
       "contribution": 0.6,
@@ -27,7 +27,7 @@
       "id": "long_yield",
       "label": "Long-end yield pressure",
       "weight": 0.1,
-      "rawValue": 5.28,
+      "rawValue": 5.22,
       "unit": "%",
       "zScore": 3,
       "contribution": 0.3,
@@ -40,21 +40,10 @@
       "weight": 0.2,
       "rawValue": 4,
       "unit": "bp",
-      "zScore": -0.42,
-      "contribution": -0.083,
+      "zScore": -0.41,
+      "contribution": -0.082,
       "pressure": "easing",
       "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
-    },
-    {
-      "id": "curve",
-      "label": "Yield-curve inversion",
-      "weight": 0.1,
-      "rawValue": -51,
-      "unit": "bp",
-      "zScore": -0.42,
-      "contribution": -0.042,
-      "pressure": "easing",
-      "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
     },
     {
       "id": "reserve_liquidity",
@@ -79,23 +68,29 @@
       "description": "A stronger broad U.S. dollar can tighten global dollar funding and external financial conditions."
     },
     {
+      "id": "curve",
+      "label": "Yield-curve inversion",
+      "weight": 0.1,
+      "rawValue": -47,
+      "unit": "bp",
+      "zScore": -0.18,
+      "contribution": -0.018,
+      "pressure": "neutral",
+      "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
+    },
+    {
       "id": "funding",
       "label": "Overnight funding spread",
       "weight": 0.15,
-      "rawValue": -2,
+      "rawValue": -3,
       "unit": "bp",
-      "zScore": 0.09,
-      "contribution": 0.014,
+      "zScore": -0.06,
+      "contribution": -0.01,
       "pressure": "neutral",
       "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
     }
   ],
   "history": [
-    {
-      "date": "2021-07-27",
-      "score": 42.6,
-      "regime": "Neutral"
-    },
     {
       "date": "2021-07-28",
       "score": 42.5,
@@ -6590,6 +6585,11 @@
       "date": "2026-10-07",
       "score": 59.9,
       "regime": "Tight"
+    },
+    {
+      "date": "2026-10-08",
+      "score": 59.9,
+      "regime": "Tight"
     }
   ],
   "sourceHealth": [
@@ -6597,71 +6597,81 @@
       "id": "DGS2",
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-08",
+      "latestValue": 4.75
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-08",
+      "latestValue": 5.22
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-08",
+      "latestValue": 2.87
     },
     {
       "id": "DCPN3M",
       "name": "90-Day AA Nonfinancial Commercial Paper Rate",
       "source": "Federal Reserve H.15",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-07",
+      "latestValue": 4.09
     },
     {
       "id": "DTB3",
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-08",
+      "latestValue": 4.05
     },
     {
       "id": "SOFR",
       "name": "Secured Overnight Financing Rate",
       "source": "Federal Reserve Bank of New York",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-08",
+      "latestValue": 3.87
     },
     {
       "id": "IORB",
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-13",
+      "latestValue": 3.9
     },
     {
       "id": "IOER",
       "name": "Interest Rate on Excess Reserves",
       "source": "Federal Reserve Board",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2021-07-28",
+      "latestValue": 0.15
     },
     {
       "id": "DTWEXBGS",
       "name": "Nominal Broad U.S. Dollar Index",
       "source": "Federal Reserve H.10",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-02",
+      "latestValue": 121.3848
     },
     {
       "id": "WRESBAL",
       "name": "Reserve Balances with Federal Reserve Banks",
       "source": "Federal Reserve H.4.1",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "latestDate": "2026-10-07",
+      "latestValue": 3029659
     }
   ],
   "methodology": {
@@ -6742,6 +6752,5 @@
       }
     ],
     "note": "The BS-FCI is a BondStats analytical composite, not an official Federal Reserve index. It uses official market and funding series and applies BondStats normalization and weighting."
-  },
-  "refreshAttemptAt": "2026-10-09T21:12:34.418Z"
+  }
 }
