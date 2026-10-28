@@ -1,13 +1,13 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-10-28T15:13:35.155Z",
-  "asOfDate": "2026-10-26",
+  "generatedAt": "2026-10-28T21:11:45.372Z",
+  "asOfDate": "2026-10-27",
   "index": {
-    "score": 59,
+    "score": 59.6,
     "regime": "Tight",
-    "change1w": 0.2,
-    "change1m": 0.1,
+    "change1w": -0.1,
+    "change1m": 0.6,
     "momentum": "Stable",
     "mainDriver": "Real-rate pressure"
   },
@@ -16,10 +16,10 @@
       "id": "real_rates",
       "label": "Real-rate pressure",
       "weight": 0.2,
-      "rawValue": 2.66,
+      "rawValue": 2.64,
       "unit": "%",
-      "zScore": 2.29,
-      "contribution": 0.458,
+      "zScore": 2.2,
+      "contribution": 0.44,
       "pressure": "tightening",
       "description": "Higher real yields increase the real cost of capital and tighten duration-sensitive financial conditions."
     },
@@ -27,10 +27,10 @@
       "id": "long_yield",
       "label": "Long-end yield pressure",
       "weight": 0.1,
-      "rawValue": 5,
+      "rawValue": 4.99,
       "unit": "%",
-      "zScore": 2.27,
-      "contribution": 0.227,
+      "zScore": 2.22,
+      "contribution": 0.222,
       "pressure": "tightening",
       "description": "Higher long-term Treasury yields tighten financing conditions for duration-sensitive borrowers and assets."
     },
@@ -40,8 +40,8 @@
       "weight": 0.2,
       "rawValue": null,
       "unit": "bp",
-      "zScore": -1.02,
-      "contribution": -0.205,
+      "zScore": -1.03,
+      "contribution": -0.206,
       "pressure": "easing",
       "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
     },
@@ -49,10 +49,10 @@
       "id": "funding",
       "label": "Overnight funding spread",
       "weight": 0.15,
-      "rawValue": 3,
+      "rawValue": 5,
       "unit": "bp",
-      "zScore": 0.9,
-      "contribution": 0.135,
+      "zScore": 1.22,
+      "contribution": 0.184,
       "pressure": "tightening",
       "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
     },
@@ -60,10 +60,10 @@
       "id": "curve",
       "label": "Yield-curve inversion",
       "weight": 0.1,
-      "rawValue": -32,
+      "rawValue": -29,
       "unit": "bp",
-      "zScore": 0.82,
-      "contribution": 0.082,
+      "zScore": 1.01,
+      "contribution": 0.101,
       "pressure": "tightening",
       "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
     },
@@ -91,11 +91,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2021-08-12",
-      "score": 43.4,
-      "regime": "Neutral"
-    },
     {
       "date": "2021-08-13",
       "score": 43.2,
@@ -6590,6 +6585,11 @@
       "date": "2026-10-26",
       "score": 59,
       "regime": "Tight"
+    },
+    {
+      "date": "2026-10-27",
+      "score": 59.6,
+      "regime": "Tight"
     }
   ],
   "sourceHealth": [
@@ -6598,24 +6598,24 @@
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-26",
-      "latestValue": 4.68
+      "latestDate": "2026-10-27",
+      "latestValue": 4.7
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-26",
-      "latestValue": 5
+      "latestDate": "2026-10-27",
+      "latestValue": 4.99
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-26",
-      "latestValue": 2.66
+      "latestDate": "2026-10-27",
+      "latestValue": 2.64
     },
     {
       "id": "DCPN3M",
@@ -6630,7 +6630,7 @@
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-26",
+      "latestDate": "2026-10-27",
       "latestValue": 4.05
     },
     {
@@ -6646,7 +6646,7 @@
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
       "status": "ok",
-      "latestDate": "2026-10-28",
+      "latestDate": "2026-10-29",
       "latestValue": 3.9
     },
     {
