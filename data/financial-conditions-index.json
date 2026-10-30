@@ -1,13 +1,13 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-10-30T15:07:04.729Z",
-  "asOfDate": "2026-10-28",
+  "generatedAt": "2026-10-30T20:53:40.571Z",
+  "asOfDate": "2026-10-29",
   "index": {
-    "score": 59,
+    "score": 58.3,
     "regime": "Tight",
-    "change1w": -1,
-    "change1m": 0.3,
+    "change1w": -1.6,
+    "change1m": -0.8,
     "momentum": "Stable",
     "mainDriver": "Real-rate pressure"
   },
@@ -16,10 +16,10 @@
       "id": "real_rates",
       "label": "Real-rate pressure",
       "weight": 0.2,
-      "rawValue": 2.67,
+      "rawValue": 2.63,
       "unit": "%",
-      "zScore": 2.3,
-      "contribution": 0.459,
+      "zScore": 2.13,
+      "contribution": 0.426,
       "pressure": "tightening",
       "description": "Higher real yields increase the real cost of capital and tighten duration-sensitive financial conditions."
     },
@@ -27,10 +27,10 @@
       "id": "long_yield",
       "label": "Long-end yield pressure",
       "weight": 0.1,
-      "rawValue": 5.05,
+      "rawValue": 4.98,
       "unit": "%",
-      "zScore": 2.42,
-      "contribution": 0.242,
+      "zScore": 2.15,
+      "contribution": 0.215,
       "pressure": "tightening",
       "description": "Higher long-term Treasury yields tighten financing conditions for duration-sensitive borrowers and assets."
     },
@@ -40,7 +40,7 @@
       "weight": 0.2,
       "rawValue": null,
       "unit": "bp",
-      "zScore": -1.03,
+      "zScore": -1.02,
       "contribution": -0.205,
       "pressure": "easing",
       "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
@@ -51,7 +51,7 @@
       "weight": 0.15,
       "rawValue": 4,
       "unit": "bp",
-      "zScore": 1.06,
+      "zScore": 1.05,
       "contribution": 0.158,
       "pressure": "tightening",
       "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
@@ -60,10 +60,10 @@
       "id": "curve",
       "label": "Yield-curve inversion",
       "weight": 0.1,
-      "rawValue": -38,
+      "rawValue": -37,
       "unit": "bp",
-      "zScore": 0.44,
-      "contribution": 0.044,
+      "zScore": 0.51,
+      "contribution": 0.051,
       "pressure": "tightening",
       "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
     },
@@ -91,11 +91,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2021-08-16",
-      "score": 43,
-      "regime": "Neutral"
-    },
     {
       "date": "2021-08-17",
       "score": 43.5,
@@ -6590,6 +6585,11 @@
       "date": "2026-10-28",
       "score": 59,
       "regime": "Tight"
+    },
+    {
+      "date": "2026-10-29",
+      "score": 58.3,
+      "regime": "Tight"
     }
   ],
   "sourceHealth": [
@@ -6598,24 +6598,24 @@
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-28",
-      "latestValue": 4.67
+      "latestDate": "2026-10-29",
+      "latestValue": 4.61
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-28",
-      "latestValue": 5.05
+      "latestDate": "2026-10-29",
+      "latestValue": 4.98
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-28",
-      "latestValue": 2.67
+      "latestDate": "2026-10-29",
+      "latestValue": 2.63
     },
     {
       "id": "DCPN3M",
@@ -6630,8 +6630,8 @@
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-28",
-      "latestValue": 4.01
+      "latestDate": "2026-10-29",
+      "latestValue": 4
     },
     {
       "id": "SOFR",
@@ -6646,7 +6646,7 @@
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
       "status": "ok",
-      "latestDate": "2026-10-30",
+      "latestDate": "2026-11-02",
       "latestValue": 3.9
     },
     {
