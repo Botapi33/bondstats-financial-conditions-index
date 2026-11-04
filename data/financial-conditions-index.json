@@ -1,13 +1,13 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-11-03T19:38:16.491Z",
-  "asOfDate": "2026-10-30",
+  "generatedAt": "2026-11-04T00:42:17.984Z",
+  "asOfDate": "2026-11-02",
   "index": {
-    "score": 58.2,
+    "score": 58.7,
     "regime": "Tight",
-    "change1w": -2.6,
-    "change1m": -2.8,
+    "change1w": -0.5,
+    "change1m": -2.6,
     "momentum": "Easing",
     "mainDriver": "Real-rate pressure"
   },
@@ -16,10 +16,10 @@
       "id": "real_rates",
       "label": "Real-rate pressure",
       "weight": 0.2,
-      "rawValue": 2.6,
+      "rawValue": 2.62,
       "unit": "%",
-      "zScore": 2,
-      "contribution": 0.401,
+      "zScore": 2.07,
+      "contribution": 0.413,
       "pressure": "tightening",
       "description": "Higher real yields increase the real cost of capital and tighten duration-sensitive financial conditions."
     },
@@ -38,10 +38,10 @@
       "id": "long_yield",
       "label": "Long-end yield pressure",
       "weight": 0.1,
-      "rawValue": 4.94,
+      "rawValue": 4.91,
       "unit": "%",
-      "zScore": 1.99,
-      "contribution": 0.199,
+      "zScore": 1.87,
+      "contribution": 0.187,
       "pressure": "tightening",
       "description": "Higher long-term Treasury yields tighten financing conditions for duration-sensitive borrowers and assets."
     },
@@ -52,7 +52,7 @@
       "rawValue": 5,
       "unit": "bp",
       "zScore": 1.21,
-      "contribution": 0.182,
+      "contribution": 0.181,
       "pressure": "tightening",
       "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
     },
@@ -60,10 +60,10 @@
       "id": "curve",
       "label": "Yield-curve inversion",
       "weight": 0.1,
-      "rawValue": -38,
+      "rawValue": -32,
       "unit": "bp",
-      "zScore": 0.45,
-      "contribution": 0.045,
+      "zScore": 0.84,
+      "contribution": 0.084,
       "pressure": "tightening",
       "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
     },
@@ -91,11 +91,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2021-08-18",
-      "score": 43.5,
-      "regime": "Neutral"
-    },
     {
       "date": "2021-08-19",
       "score": 44,
@@ -6590,6 +6585,11 @@
       "date": "2026-10-30",
       "score": 58.2,
       "regime": "Tight"
+    },
+    {
+      "date": "2026-11-02",
+      "score": 58.7,
+      "regime": "Tight"
     }
   ],
   "sourceHealth": [
@@ -6598,24 +6598,24 @@
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-30",
-      "latestValue": 4.56
+      "latestDate": "2026-11-02",
+      "latestValue": 4.59
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-30",
-      "latestValue": 4.94
+      "latestDate": "2026-11-02",
+      "latestValue": 4.91
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-30",
-      "latestValue": 2.6
+      "latestDate": "2026-11-02",
+      "latestValue": 2.62
     },
     {
       "id": "DCPN3M",
@@ -6630,8 +6630,8 @@
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-10-30",
-      "latestValue": 3.99
+      "latestDate": "2026-11-02",
+      "latestValue": 4.03
     },
     {
       "id": "SOFR",
@@ -6646,7 +6646,7 @@
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
       "status": "ok",
-      "latestDate": "2026-11-03",
+      "latestDate": "2026-11-04",
       "latestValue": 3.9
     },
     {
