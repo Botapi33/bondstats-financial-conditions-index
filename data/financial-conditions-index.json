@@ -1,14 +1,14 @@
 {
   "version": 1,
   "status": "live",
-  "generatedAt": "2026-11-10T12:47:55.745Z",
-  "asOfDate": "2026-11-06",
+  "generatedAt": "2026-11-10T21:51:09.513Z",
+  "asOfDate": "2026-11-09",
   "index": {
-    "score": 60.3,
+    "score": 58.6,
     "regime": "Tight",
-    "change1w": 2.1,
-    "change1m": 0.5,
-    "momentum": "Stable",
+    "change1w": 0.1,
+    "change1m": -1.4,
+    "momentum": "Easing",
     "mainDriver": "Real-rate pressure"
   },
   "components": [
@@ -16,10 +16,10 @@
       "id": "real_rates",
       "label": "Real-rate pressure",
       "weight": 0.2,
-      "rawValue": 2.63,
+      "rawValue": 2.66,
       "unit": "%",
-      "zScore": 2.05,
-      "contribution": 0.41,
+      "zScore": 2.15,
+      "contribution": 0.429,
       "pressure": "tightening",
       "description": "Higher real yields increase the real cost of capital and tighten duration-sensitive financial conditions."
     },
@@ -27,45 +27,34 @@
       "id": "long_yield",
       "label": "Long-end yield pressure",
       "weight": 0.1,
-      "rawValue": 4.86,
+      "rawValue": 4.88,
       "unit": "%",
-      "zScore": 1.65,
-      "contribution": 0.165,
+      "zScore": 1.71,
+      "contribution": 0.171,
       "pressure": "tightening",
       "description": "Higher long-term Treasury yields tighten financing conditions for duration-sensitive borrowers and assets."
-    },
-    {
-      "id": "cp_spread",
-      "label": "Commercial-paper spread",
-      "weight": 0.2,
-      "rawValue": 10,
-      "unit": "bp",
-      "zScore": 0.61,
-      "contribution": 0.123,
-      "pressure": "tightening",
-      "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
     },
     {
       "id": "curve",
       "label": "Yield-curve inversion",
       "weight": 0.1,
-      "rawValue": -35,
+      "rawValue": -32,
       "unit": "bp",
-      "zScore": 0.66,
-      "contribution": 0.066,
+      "zScore": 0.87,
+      "contribution": 0.087,
       "pressure": "tightening",
       "description": "A more inverted 2s10s curve is treated as a tighter policy and credit-cycle configuration."
     },
     {
-      "id": "funding",
-      "label": "Overnight funding spread",
-      "weight": 0.15,
-      "rawValue": -1,
+      "id": "cp_spread",
+      "label": "Commercial-paper spread",
+      "weight": 0.2,
+      "rawValue": 5,
       "unit": "bp",
-      "zScore": 0.21,
-      "contribution": 0.032,
-      "pressure": "tightening",
-      "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
+      "zScore": -0.2,
+      "contribution": -0.039,
+      "pressure": "easing",
+      "description": "The AA nonfinancial commercial-paper premium over Treasury bills is a direct short-term credit and funding signal."
     },
     {
       "id": "reserve_liquidity",
@@ -77,6 +66,17 @@
       "contribution": 0.022,
       "pressure": "neutral",
       "description": "Falling reserve balances increase the liquidity-pressure contribution to the index."
+    },
+    {
+      "id": "funding",
+      "label": "Overnight funding spread",
+      "weight": 0.15,
+      "rawValue": -2,
+      "unit": "bp",
+      "zScore": 0.05,
+      "contribution": 0.008,
+      "pressure": "neutral",
+      "description": "SOFR relative to the administered reserve rate captures pressure in secured overnight funding."
     },
     {
       "id": "dollar",
@@ -91,11 +91,6 @@
     }
   ],
   "history": [
-    {
-      "date": "2021-08-25",
-      "score": 43.9,
-      "regime": "Neutral"
-    },
     {
       "date": "2021-08-26",
       "score": 44.2,
@@ -6590,6 +6585,11 @@
       "date": "2026-11-06",
       "score": 60.3,
       "regime": "Tight"
+    },
+    {
+      "date": "2026-11-09",
+      "score": 58.6,
+      "regime": "Tight"
     }
   ],
   "sourceHealth": [
@@ -6598,24 +6598,24 @@
       "name": "2-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-11-06",
-      "latestValue": 4.51
+      "latestDate": "2026-11-09",
+      "latestValue": 4.56
     },
     {
       "id": "DGS10",
       "name": "10-Year Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-11-06",
-      "latestValue": 4.86
+      "latestDate": "2026-11-09",
+      "latestValue": 4.88
     },
     {
       "id": "DFII10",
       "name": "10-Year Real Treasury Yield",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-11-06",
-      "latestValue": 2.63
+      "latestDate": "2026-11-09",
+      "latestValue": 2.66
     },
     {
       "id": "DCPN3M",
@@ -6630,23 +6630,23 @@
       "name": "3-Month Treasury Bill Rate",
       "source": "Federal Reserve H.15",
       "status": "ok",
-      "latestDate": "2026-11-06",
-      "latestValue": 4.01
+      "latestDate": "2026-11-09",
+      "latestValue": 4.06
     },
     {
       "id": "SOFR",
       "name": "Secured Overnight Financing Rate",
       "source": "Federal Reserve Bank of New York",
       "status": "ok",
-      "latestDate": "2026-11-06",
-      "latestValue": 3.89
+      "latestDate": "2026-11-09",
+      "latestValue": 3.88
     },
     {
       "id": "IORB",
       "name": "Interest Rate on Reserve Balances",
       "source": "Federal Reserve Board",
       "status": "ok",
-      "latestDate": "2026-11-10",
+      "latestDate": "2026-11-12",
       "latestValue": 3.9
     },
     {
